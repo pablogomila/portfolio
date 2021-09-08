@@ -1,25 +1,26 @@
 import './navbar.scss'
+import { Mail, PhoneAndroid } from '@material-ui/icons'
 
-const Navbar = () => {
+const Navbar = ({menuOpen, setMenuOpen}) => {
   return (
-    <div className="navbar">
+    <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="link">
-            Intro
-          </a>
-          <a href="#about" className="link">
-            About
-          </a>
-          <a href="#contact" className="link">
-            Contact
-          </a>
+          <h1>Pablo Gomila</h1>
         </div>
         <div className="center">
-          
+          <Mail className="icon" />
+          <span>pablogomila@protonmail.com</span>
+          <PhoneAndroid className="icon" />
+          <span>+54-3472-593825</span>
         </div>
+
         <div className="right">
-          <h1>Der</h1>
+          <div className="hamburger" onClick={()=> setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
         </div>
       </div>
     </div>
