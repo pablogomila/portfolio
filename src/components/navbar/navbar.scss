@@ -9,20 +9,19 @@
     transition: all 1s ease;
     
     .wrapper{
-        padding: 10px 30px;
+        padding: 15px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .left{
             display: flex;
-
-            
         }
 
         .center{
             display: flex;
             align-items: center;
+            margin-right: 100px;
             .icon{
                 font-size: 20px;
                 margin: 10px;

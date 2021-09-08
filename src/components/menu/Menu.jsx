@@ -10,6 +10,9 @@ const Menu = ({menuOpen, setMenuOpen}) => {
       <a href="#about" className="link" onClick={()=>setMenuOpen(false)}>
         About
       </a>
+      <a href="#projects" className="link" onClick={()=>setMenuOpen(false)}>
+        Projects
+      </a>
       <a href="#contact" className="link" onClick={()=>setMenuOpen(false)}>
         Contact
       </a>

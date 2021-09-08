@@ -6,7 +6,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
     <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <h1>Pablo Gomila</h1>
+          <h2>Pablo Gomila - FullStack Developer</h2>
         </div>
         <div className="center">
           <Mail className="icon" />
