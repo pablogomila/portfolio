@@ -5,7 +5,7 @@ import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import { useState } from 'react'
 import Menu from './components/menu/Menu'
-import Projects from './components/projects/Projects'
+import Projectspage from './components/projectspage/Projectspage'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -16,7 +16,7 @@ function App() {
       <div className="sections">
         <Intro />
         <About />
-        <Projects/>
+        <Projectspage/>
         <Contact />
       </div>
     </div>

@@ -7,128 +7,164 @@
   display: flex;
   flex-direction: row;
 
-  .left{
+  .left {
     width: 50%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     padding-top: 50px;
-    .glitch{
-      color:white;
+    overflow: hidden;
+    .glitch {
+      color: white;
       font-family: inherit;
-      font-size:50px;
-      position:relative;
-      width:400px;
-      margin:0 auto;
+      font-size: 50px;
+      position: relative;
+      width: 400px;
+      margin: 0 auto;
+      overflow: hidden;
     }
-    @keyframes noise-anim{
-      $steps:20;
-      @for $i from 0 through $steps{
-        #{percentage($i*(1/$steps))}{
-          clip:rect(random(100)+px,9999px,random(100)+px,0);
+    @keyframes noise-anim {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100) + px, 9999px, random(100) + px, 0);
         }
       }
     }
-    .glitch:after{
-      content:attr(data-text);
-      position:absolute;
-      left:2px;
-      text-shadow:-1px 0 red;
-      top:0;
-      color:white;
-      background:none;
-      overflow:hidden;
-      clip:rect(0,900px,0,0); 
-      animation:noise-anim 2s infinite linear alternate-reverse;
+    .glitch:after {
+      content: attr(data-text);
+      position: absolute;
+      left: 2px;
+      text-shadow: -1px 0 red;
+      top: 0;
+      color: white;
+      background: none;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim 2s infinite linear alternate-reverse;
     }
-    
-    @keyframes noise-anim-2{
-      $steps:20;
-      @for $i from 0 through $steps{
-        #{percentage($i*(1/$steps))}{
-          clip:rect(random(100)+px,9999px,random(100)+px,0);
+
+    @keyframes noise-anim-2 {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100) + px, 9999px, random(100) + px, 0);
         }
       }
     }
-    .glitch:before{
-      content:attr(data-text);
-      position:absolute;
-      left:-2px;
-      text-shadow:1px 0 blue; 
-      top:0;
-      color:white;
-      background:none;
-      overflow:hidden;
-      clip:rect(0,900px,0,0); 
-      animation:noise-anim-2 3s infinite linear alternate-reverse;
+    .glitch:before {
+      content: attr(data-text);
+      position: absolute;
+      left: -2px;
+      text-shadow: 1px 0 blue;
+      top: 0;
+      color: white;
+      background: none;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim-2 3s infinite linear alternate-reverse;
     }
-    .icon{
+    .icon {
       padding-left: 40px;
       font-size: 40px;
     }
   }
-  .right{
+  .right {
     width: 50%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     padding-top: 50px;
-    img{
-      align-self: center;
-      width: 60%;
-      margin-top: 20px;
+    .subglitch {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .stackcontainer1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: initial;
+        .stack {
+          padding-top: 30px;
+          width: 80px;
+          flex-direction: column;
+        }
+      }
+      .stackcontainer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: initial;
+        .stack {
+          padding-top: 30px;
+          width: 80px;
+          flex-direction: column;
+        }
+      }
+      .stackcontainer3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: initial;
+        .stack {
+          padding-top: 30px;
+          width: 80px;
+          flex-direction: column;
+        }
+      }
     }
-    .glitch{
-      color:white;
+    .glitch {
+      color: white;
       font-family: inherit;
-      font-size:50px;
-      position:relative;
-      width:400px;
-      margin:0 auto;
+      align-self: center;
+      font-size: 50px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
     }
-    @keyframes noise-anim{
-      $steps:20;
-      @for $i from 0 through $steps{
-        #{percentage($i*(1/$steps))}{
-          clip:rect(random(100)+px,9999px,random(100)+px,0);
+    @keyframes noise-anim {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100) + px, 9999px, random(100) + px, 0);
         }
       }
     }
-    .glitch:after{
-      content:attr(data-text);
-      position:absolute;
-      left:2px;
-      text-shadow:-1px 0 red;
-      top:0;
-      color:white;
-      background:none;
-      overflow:hidden;
-      clip:rect(0,900px,0,0); 
-      animation:noise-anim 2s infinite linear alternate-reverse;
+    .glitch:after {
+      content: attr(data-text);
+      position: absolute;
+      left: 2px;
+      text-shadow: -1px 0 red;
+      top: 0;
+      color: white;
+      background: none;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim 2s infinite linear alternate-reverse;
     }
-    
-    @keyframes noise-anim-2{
-      $steps:20;
-      @for $i from 0 through $steps{
-        #{percentage($i*(1/$steps))}{
-          clip:rect(random(100)+px,9999px,random(100)+px,0);
+
+    @keyframes noise-anim-2 {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100) + px, 9999px, random(100) + px, 0);
         }
       }
     }
-    .glitch:before{
-      content:attr(data-text);
-      position:absolute;
-      left:-2px;
-      text-shadow:1px 0 blue; 
-      top:0;
-      color:white;
-      background:none;
-      overflow:hidden;
-      clip:rect(0,900px,0,0); 
-      animation:noise-anim-2 3s infinite linear alternate-reverse;
+    .glitch:before {
+      content: attr(data-text);
+      position: absolute;
+      left: -2px;
+      text-shadow: 1px 0 blue;
+      top: 0;
+      color: white;
+      background: none;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim-2 3s infinite linear alternate-reverse;
     }
-    .icon{
+    .icon {
       padding-left: 40px;
       font-size: 40px;
     }
-    
   }
 }

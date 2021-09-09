@@ -1,9 +1,9 @@
 import React from 'react'
-import "./projects.scss"
+import "./projectspage.scss"
 
 const Projects = () => {
     return (
-        <div className="projects" id="projects">
+        <div className="projects" id="projectspage">
             Projects
         </div>
     )
