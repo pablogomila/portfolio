@@ -1,5 +1,6 @@
 import './about.scss'
 import PermIdentityIcon from '@material-ui/icons/PermIdentity'
+import Pablo from '../../assets/Pablo.jpg'
 import Css from '../../assets/css.png'
 import Html from '../../assets/html.png'
 import Js from '../../assets/javascript.png'
@@ -13,6 +14,8 @@ import Tail from '../../assets/tailwind.png'
 import Trello from '../../assets/trello.png'
 import Figma from '../../assets/figma.png'
 import Git from '../../assets/github.png'
+import VSC from '../../assets/vsc.png'
+import Slack from '../../assets/slack.png'
 
 const About = () => {
   return (
@@ -22,6 +25,31 @@ const About = () => {
           ABOUT ME
           <PermIdentityIcon className="icon" />
         </div>
+        <div class="card">
+          <div class="image">
+            <img src={Pablo} alt="" />
+          </div>
+          <div class="details">
+            <div class="center">
+              <p>
+                After 14 years of working in the metalurgic industry, I felt it
+                was time for a change.
+                <br />
+                <br />
+                I finally wanted to follow my lifelong dream of becoming a
+                developer and working in the IT industry.
+                <br />
+                <br />
+                I dedicated all my time to learn everything I could to do so,
+                it´s finally time.
+                <br />
+                <br />
+                I´m ready to face the industry and say "Here I am, ready..."
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div className="right">
         <div className="glitch" data-text="TECH STACK">
@@ -59,10 +87,10 @@ const About = () => {
             <p className="stacktext">Figma</p>
             <img className="stack" src={Git} alt=""></img>
             <p className="stacktext">Github</p>
-            <img className="stack" src={Tail} alt=""></img>
-            <p className="stacktext">Tailwind</p>
-            <img className="stack" src={Sql} alt=""></img>
-            <p className="stacktext">SQL</p>
+            <img className="stack" src={VSC} alt=""></img>
+            <p className="stacktext">VSCode</p>
+            <img className="stack" src={Slack} alt=""></img>
+            <p className="stacktext">Slack</p>
           </div>
         </div>
       </div>
