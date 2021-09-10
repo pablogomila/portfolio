@@ -49,7 +49,7 @@ const About = () => {
             </div>
           </div>
         </div>
-
+        <a href="https://drive.google.com/file/d/1fzhgRf1jxGAUaHL95lgBjcRqIARbuoSn/view?usp=sharing" target="_blank" rel="noreferrer" class="download">Download Resume / CV</a>
       </div>
       <div className="right">
         <div className="glitch" data-text="TECH STACK">

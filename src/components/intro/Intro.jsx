@@ -19,8 +19,9 @@ const intro = () => {
         </div>
       </div>
       <img src={wave} alt="" className="wave" />
-      <img src={arrow} alt="" className="arrow" />
-      
+      <a href="#about">
+      <img src={arrow} alt="" href="#about" className="arrow" />
+      </a>
     </div>
   )
 }

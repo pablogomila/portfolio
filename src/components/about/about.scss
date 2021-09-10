@@ -14,12 +14,37 @@
     padding-top: 50px;
     overflow: hidden;
 
-    
+    .download {
+      overflow: hidden;
+      margin-top: 50px;
+      margin-left: 280px;
+      left: 250px;
+      width: 250px;
+      box-shadow:inset 0px 0px 16px 0px #bee2f9;
+      background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+      background-color:#63b8ee;
+      border-radius:37px;
+      border:3px solid #3866a3;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:inherit;
+      font-size:20px;
+      font-weight:bold;
+      padding:8px 20px;
+      text-align: center;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #7cacde;
+    }
+    .download:hover {
+      background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+      background-color:#468ccf;
+    }
 
     .card {
       position: relative;
       top: 40%;
-      left: 45%;
+      left: 420px;
       transform: translate(-50%, -50%);
       overflow: hidden;
       width: 460px;
@@ -56,8 +81,9 @@
     }
     .card .details .center {
       padding: 20px;
+      color:white;
       text-align: center;
-      background: #fff;
+      background: #000022;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -77,7 +103,7 @@
     .card .details .center p {
       margin: 10px 0;
       padding: 0;
-      color: #262626;
+      color: white;
     }
     .card .details .center ul {
       margin: 10px auto 0;
