@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Changas from '../../assets/projects/changas.png'
 import Dogs from '../../assets/projects/Dogs.png'
+import Chat from '../../assets/projects/chat.png'
 
 const useStyles = makeStyles({
   root: {
@@ -96,6 +97,46 @@ const Projects = () => {
           </Button>
           <Button
             href="https://changas.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            size="medium"
+            variant="outlined"
+            color="secondary"
+          >
+            Live Version
+          </Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea
+          href="https://chat-app-one-gamma.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <CardMedia className={classes.media} image={Chat} />
+          <CardContent className="content">
+            <Typography gutterBottom variant="h5" component="h2">
+              Chat App
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Developed as a challenge it was a great oportunity to learn Socket.io
+              integration for future projects.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className="actions">
+          <Button
+            href="https://github.com/pablogomila/chat-app"
+            target="_blank"
+            rel="noreferrer"
+            size="medium"
+            variant="outlined"
+            color="secondary"
+          >
+            Github Repository
+          </Button>
+          <Button
+            href="https://chat-app-one-gamma.vercel.app/"
             target="_blank"
             rel="noreferrer"
             size="medium"
