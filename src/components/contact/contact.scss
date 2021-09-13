@@ -4,4 +4,87 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000022' stroke-width='62.5' stroke-opacity='0.25' %3E%3Ccircle fill='%23001242' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23001140' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%2300103e' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23000f3c' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23000e3a' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23000d39' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23000c37' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23000b35' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23000a33' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23000831' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2300072f' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2300062d' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2300052b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2300042a' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23000328' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23000226' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23000124' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23000022' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+    .fa {
+      flex-direction: row;
+      padding: 20px;
+      font-size: 60px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 15px;
+    }
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    .fa-linkedin {
+      background: #0e76a8;
+      color: white;
+    }
+    .fa-instagram {
+      background: #405DE6;
+      color: white;
+    }
+  }
+
+  .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    h2 {
+      font-size: 40px;
+    }
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      input{
+        color: black;
+        width: 300px;
+        height: 30px;
+        font-size: 15px;
+      }
+      textarea{
+        width: 300px;
+        height: 300px;
+        font-size: 15px;
+      }
+      button{
+        height: 40px;
+        color: white;
+        font-size: 18px;
+        background-color: #001242;
+        width: 305px;
+        height: 30px;
+      }
+      h3{
+        padding: 0;
+      }
+    }
+  }
 }
