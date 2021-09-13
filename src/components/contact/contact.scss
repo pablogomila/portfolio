@@ -8,6 +8,16 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  .arrowcont {
+    align-self: start;
+    width: 60px;
+    margin-right: 66px;
+    transform: rotate(180deg);
+    .arrow {
+      width: 50px;
+      height: 50px;
+    }
+  }
 
   .left {
     width: 50%;
@@ -29,19 +39,54 @@
       opacity: 0.7;
     }
     .fa-facebook {
-      background: #3B5998;
+      background: linear-gradient(120deg, #3b5998, #ffffff);
       color: white;
     }
     .fa-twitter {
-      background: #55ACEE;
+      background: linear-gradient(
+        45deg,
+        #66757f,
+        #00acee,
+        #36d8ff,
+        #f5f8fa,
+        #ffffff
+      );
       color: white;
     }
     .fa-linkedin {
-      background: #0e76a8;
+      background: linear-gradient(
+        45deg,
+        #0077b5,
+        #000000,
+        #313335,
+        #86888a,
+        #caccce,
+        #00a0dc
+      );
       color: white;
     }
     .fa-instagram {
-      background: #405DE6;
+      background: linear-gradient(
+        45deg,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d
+      );
+      color: white;
+    }
+    .fa-github {
+      background: linear-gradient(
+        45deg,
+        #4078c0,
+        #6e5494,
+        #bd2c00,
+        #c9510c,
+        #6cc644,
+        #fafafa
+      );
       color: white;
     }
   }
@@ -63,26 +108,41 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      input{
+      input {
         color: black;
         width: 300px;
         height: 30px;
         font-size: 15px;
       }
-      textarea{
+      textarea {
         width: 300px;
         height: 300px;
         font-size: 15px;
       }
-      button{
-        height: 40px;
-        color: white;
-        font-size: 18px;
-        background-color: #001242;
-        width: 305px;
-        height: 30px;
+      button {
+        overflow: hidden;
+        width: 300px;
+        box-shadow: inset 0px 0px 16px 0px #bee2f9;
+        background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+        background-color: #63b8ee;
+        border-radius: 10px;
+        border: 3px solid #3866a3;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #7cacde;
       }
-      h3{
+      button:hover {
+        background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+        background-color: #468ccf;
+      }
+      h3 {
         padding: 0;
       }
     }

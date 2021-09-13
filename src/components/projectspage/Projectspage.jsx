@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography'
 import Changas from '../../assets/projects/changas.png'
 import Dogs from '../../assets/projects/Dogs.png'
 import Chat from '../../assets/projects/chat.png'
+import arrow from '../../assets/arrow down.gif'
 
 const useStyles = makeStyles({
   root: {
@@ -147,6 +148,9 @@ const Projects = () => {
           </Button>
         </CardActions>
       </Card>
+      <a className="arrowcont" href="#contact">
+          <img src={arrow} alt="" className="arrow" />
+        </a>
     </div>
   )
 }
